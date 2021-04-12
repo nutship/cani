@@ -75,5 +75,8 @@ nav:
   - home: index.md
   - algorithm🤖:
       - Preface: _algorithm/index.md
-  - exercises🏁:
+      - Advanced Techniques:
+        - 1. overview: _algorithm/_advt/1.md
+        - 2. 0-1 pack: _algorithm/_advt/2.md
+  - problems🏁:
       - Preface: _exercises/index.md
