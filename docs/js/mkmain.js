@@ -2,6 +2,7 @@ import {addpTagInBlockTexts} from './utils/addtags.js'
 import {renderImagleBlocks, renderFloatCodeBlocks, renderTables, renderLists} from './utils/renders.js'
 import {addCodeBlocksCSS} from './functions/add_code_css.js'
 import {addCyTags} from './functions/font.js'
+import {addBlockquoteClass} from './functions/add_blockquote_class.js'
 
 
 // cover class name on md content
@@ -39,6 +40,8 @@ for (let i = 0; i < fontBlocks.length; ++i) {
 /* add <p> tags */
 addpTagInBlockTexts(document.getElementsByClassName('floatpic'));
 addpTagInBlockTexts(document.getElementsByTagName('blockquote'));
+
+addBlockquoteClass(document.getElementsByTagName('blockquote'));
 
 /* add css of code blocks dynamicly */
 addCodeBlocksCSS();
