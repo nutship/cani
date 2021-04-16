@@ -24,7 +24,9 @@
 .wcode div .highlight pre code {
     font-family: var(--wcode-font-family);
     background-color: var(--wcode-background-color);
-    border: 1px solid;
+
+    /* border: 1px solid; */
+    
 }
 
 .wcode div > .highlight {
@@ -42,7 +44,9 @@
 
 /********* highlighttable *********/
 .wcode div table.highlighttable {
-    border: 1px solid;
+
+    /* border: 1px solid; */
+
     /* float: left; 
     margin-top: 4px;
     margin-bottom: 8px; */

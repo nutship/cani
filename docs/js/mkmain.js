@@ -35,6 +35,12 @@ for (let i = 0; i < fontBlocks.length; ++i) {
     else if (funcType == 'u') {
         renderLists(fontBlocks[i], funcParams);
     }
+    else if (funcType == 'ps') {
+        let mLeft = '0';
+        if (funcParams.length >= 2)
+            mLeft = funcParams[1];
+        renderFloatCodeBlocks(fontBlocks[i], ['c%wcode', 'l',  'a%0%0', 'b%' + mLeft + '&0']);
+    }
 }
 
 /* add <p> tags */

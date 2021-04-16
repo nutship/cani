@@ -1,10 +1,11 @@
 import {insertChildByNewTag, insertParentByNewTag, replaceElementByNewTag, appendEndDiv, px2rem, init2DimArray} from './block.js'
+import {detectOS} from './detos.js'
 
 
 let KEY_SPLITER = "%";
 let PARAM_SPLITER = "&";
 let DEFAULT_EXTRA_CB_CLASS = "wcode";
-let font_dict = {'cons': 'Consolas-inside', 'inh': 'inherit', 'msf': 'msf', 'mtt': 'mtt'}
+let font_dict = {'cons': 'Consolas-inside', 'inh': 'inherit', 'msf': 'msf', 'mtt': 'mtt', 'mon': 'Monaco-inside'}
 
 export function renderImagleBlocks(fontBlock, funcParams) {
 
@@ -142,6 +143,13 @@ export function renderFloatCodeBlocks(fontBlock, funcParams) {
     hl.style.marginBottom = px2rem(codeMarginBottom);
     cb.style.marginLeft = px2rem(codeMarginLeft);
     cb.style.marginRight = px2rem(codeMarginRight);
+    // add in algorithm project
+    let os = detectOS();
+    if (os.indexOf('Win') == 0) 
+        font = 'Consolas-insides';
+    else    
+        font = 'Monaco-inside';
+
     if (font != '') {
         for (var bsi = 0; bsi < altFontFamilyBlks.length; ++bsi) {
             altFontFamilyBlks[bsi].style.fontFamily = font;       

@@ -80,12 +80,14 @@ nav:
         - 2. greedy algorithm: _algorithm/_advt/2.md
       - Graph Algorithms:
         - 1. a: _algorithm/_graph/1.md
+        - single-source shortest paths: _algorithm/_graph/ss_shortest.md
   - problems🏁:
       - Preface: _problems/index.md
       - DP:
           - pack: _problems/_dp/pack.md
       - List:
           - 10. regular exp matching: _problems/_leetcode/10_regular_exp_matching.md
+          - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
           - 120. triangle: _problems/_leetcode/120_triangle.md
           - 322. coin change: _problems/_leetcode/322_coin_change.md
           - 416. partition equal subset sum: _problems/_leetcode/416_partition_equal_subset_sum.md
