@@ -108,7 +108,7 @@ $$
             if (lose)
                 return false;
         }
-        return sPtr == s.length() || p.charAt(p.length() - 1) == '*';
+        return sPtr == s.length();
     }
 
     public boolean naiveMatch(String s, String p, int si) {
