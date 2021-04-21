@@ -146,7 +146,7 @@ export function renderFloatCodeBlocks(fontBlock, funcParams) {
     // add in algorithm project
     let os = detectOS();
     if (os.indexOf('Win') == 0) 
-        font = 'Consolas-insides';
+        font = 'Consolas-inside';
     else    
         font = 'Monaco-inside';
 
