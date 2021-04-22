@@ -90,6 +90,9 @@ nav:
           - 10. regular exp matching: _problems/_leetcode/10_regular_exp_matching.md
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
           - 120. triangle: _problems/_leetcode/120_triangle.md
+          - 121. best time to sell stock: _problems/_leetcode/121_best_time_to_sell_stock.md
+          - 122. best time to sell stock ii: _problems/_leetcode/122_best_time_to_sell_stock_ii.md
+          - 123. best time to sell stock iii: _problems/_leetcode/123_best_time_to_sell_stock_iii.md
           - 322. coin change: _problems/_leetcode/322_coin_change.md
           - 416. partition equal subset sum: _problems/_leetcode/416_partition_equal_subset_sum.md
           - 474. ones and zeroes: _problems/_leetcode/474_ones_and_zeroes.md
