@@ -34,6 +34,40 @@ Note:
 
 <!-- prettier-ignore-end -->
 
+<br>
+
+以 `"horse"` 和 `"rosy"` 为例，编辑距离更准确的说是这样的过程:
+
+$$
+\enspace
+\begin{array}{lll}
+\text{Operation}         &amp; \mathrm{word1}           &amp; \mathrm{word2} \\\\
+\hline
+\textit{initial strings}      &amp; \underline horse           &amp; \text{\textunderscore} \\\\
+\text{replace by } r          &amp; h\underline orse           &amp; r\text{\textunderscore} \\\\
+\text{copy}                   &amp; ho\underline rse           &amp; ro\text{\textunderscore} \\\\
+\text{delete}                 &amp; hor\underline se           &amp; ro\text{\textunderscore} \\\\
+\text{copy}                   &amp; hors\underline e           &amp; ros\text{\textunderscore} \\\\
+\text{delete}                 &amp; horse\underline\           &amp; ros\text{\textunderscore} \\\\
+\text{insert } y              &amp; horse\underline\          &amp; rosy\text{\textunderscore}
+\end{array}
+$$
+
+各种操作的规律可总结为:
+
+<font class="t_a%0&0_b%30_h%3&0">
+
+| $\text{Operation}$ | $\text{effect}$ | $\text{cost}$ |
+| ------------------ | --------------- | ------------- |
+| $\text{replace}$   | `i+=1, j+=1`    | 1             |
+| $\text{insert}$    | `j+=1`          | 1             |
+| $\text{delete}$    | `i+=1`          | 1             |
+| $\text{copy}$      | `i+=1, j+=1`    | 0             |
+
+</font>
+
+本题的状态方程:
+
 $$
 dp[i][j] = \min\lbrace \ dp[i][j-1]+1,\enspace dp[i-1][j]+1,\enspace dp[i-1][j-1] + (\mathrm{word1}[i] \ne \mathrm{word2}[j]) \ \rbrace
 $$
