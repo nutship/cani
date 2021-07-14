@@ -22,16 +22,18 @@ Generic-MST(G, w):
 -   安全边: &ensp; 不破坏 `Generic-MST` 的贪心循环不变式性质的边 `(u,v)`
 -   切割 (cut): &ensp; $(S,\ V-S)$ 是 $V$ 的一个划分
 -   横跨 (cross): &ensp; 如果 $(u,v)\in E$ 的两个端点分别位于 $S$ 和 $V-S$ 中，则称 $(u,v)$ 横跨切割 $(S,\ V-S)$
--   如果边集 $A$ 不存在横跨 $(S,\ V-S)$ 的边，称 $A$ 尊重 该切割
+-   如果边集 $A$ 不存在横跨 $(S,\ V-S)$ 的边，称 该切割 尊重 $A$
 -   横跨一个切割的所有边中，权重最小的边称为 light edge
 
 #### (3). 安全边的选取
 
 > <ktb></ktb>
-> 无向图 $G=(V,E)$，$A\subset E$ 且 $A$ 是 $G$ 的一颗 MST 的子集。设 $(S, V-S)$ 是 $G$ 尊重 $A$ 的任一切割，$(u,v)$ 是横跨 $(S, V-S)$ 的一条 light edge，则 $(u, v)$ 对于 $A$ 是安全的
+> 无向图 $G=(V,E)$，$A\subset E$ 且 $A$ 是 $G$ 的一颗 MST 的子集。设 $(S, V-S)$ 是 $G$ 中尊重 $A$ 的任一切割，$(u,v)$ 是横跨 $(S, V-S)$ 的一条 light edge，则 $(u, v)$ 对于 $A$ 是安全的
 >
 > > 设 $T$ 是一颗 MST 且 $(u,v)\notin T$。则在 $T$ 的从 $u$ 到 $v$ 的路径上一定存在一条边 $(x,y)$ cross $(S,V-S)$，令 $T'=T-\lbrace (x,y) \rbrace \cup \lbrace (u,v) \rbrace$，则 $w(T')\leq w(T)$，由于 $T$ 是 MST，因此 $T'$ 也是。<br> &emsp;<font class="i_n_" id="nodes of S are black, nodes of V-S are white"><img src="../img/mst1.png" width=360> </font> <br>
 > > 由于 $A\subseteq T$ 且 $(x,y)\notin A$，所以 $A\subseteq T'$；由于 $A\cup (u,v)\subseteq T'$，因此 $(u,v)$ 对于 $A$ 是安全的
+
+由此，构建 MST 即是迭代「选取切分 - 计算 light edge」的过程，要与要从 cross edges 中计算出 light edge，切分只要保证不被已选取的 MST 边横跨即可.
 
 ### 2. Kruskal 算法
 

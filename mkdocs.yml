@@ -75,6 +75,8 @@ nav:
   - home: index.md
   - algorithm🤖:
       - Preface: _algorithm/index.md
+      - Data Structures:
+        - union-find set: _algorithm/_ds/ufset.md
       - Advanced Techniques:
         - 1. dynamic programming: _algorithm/_advt/1.md
         - 2. greedy algorithm: _algorithm/_advt/2.md
