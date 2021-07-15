@@ -81,6 +81,7 @@ nav:
         - 1. dynamic programming: _algorithm/_advt/1.md
         - 2. greedy algorithm: _algorithm/_advt/2.md
       - Graph Algorithms:
+        - 1. basis: _algorithm/_graph/basis.md
         - 2. minium spanning trees: _algorithm/_graph/mst.md
         - 3. single-source shortest paths: _algorithm/_graph/ss_shortest.md
         - 4. all-pairs shortest paths: _algorithm/_graph/ss_allpairs.md
