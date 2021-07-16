@@ -99,6 +99,7 @@ nav:
           - 121. best time to sell stock: _problems/_leetcode/121_best_time_to_sell_stock.md
           - 122. best time to sell stock ii: _problems/_leetcode/122_best_time_to_sell_stock_ii.md
           - 123. best time to sell stock iii: _problems/_leetcode/123_best_time_to_sell_stock_iii.md
+          - 128. longest consecutive sequence: _problems/_leetcode/128_longest_consecutive_sequence.md
           - 152. maximum product subarray: _problems/_leetcode/152_maximum_product_subarray.md
           - 188. best time to sell stock iv: _problems/_leetcode/188_best_time_to_sell_stock_iv.md
           - 300. longest increasing subsequence: _problems/_leetcode/300_longest_increasing_subsequence.md
@@ -109,3 +110,4 @@ nav:
           - 494. target sum: _problems/_leetcode/494_target_sum.md
           - 518. coin change 2: _problems/_leetcode/518_coin_change_2.md
           - 714. best time to sell stock with transaction fee: _problems/_leetcode/714_best_time_to_buy_and_sell_stock_with_transaction_fee.md
+          - 803. bricks failing when hit: _problems/_leetcode/803_bricks_failing_when_hit.md
