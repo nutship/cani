@@ -10,7 +10,7 @@
 
 ### 2. 链表实现
 
-<img src="../img/ufsetlinked.png" width=600>
+<img src="./img/ufsetlinked.png" width=600>
 
 `Make-Set` 和 `Find` 复杂度均为 $O(1)$，但 `Union` 需要更新指针，最坏情况下 $m$ 个 `Union` 需要 $\Theta(m^2)$. 而如果使用启发式策略，让短链表向长链表合并，考虑到
 
