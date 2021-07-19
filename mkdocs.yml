@@ -95,6 +95,7 @@ nav:
           - pack: _problems/_dp/pack.md
       - List:
           - 10. regular exp matching: _problems/_leetcode/10_regular_exp_matching.md
+          - 23. merge K sorted lists: _problems/_leetcode/23_merge_k_sorted_lists.md
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
           - 53. maximum subarray: _problems/_leetcode/53_maximum_subarray.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
