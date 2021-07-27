@@ -121,11 +121,11 @@ Dijkstra 算法总是在 $\mathit{Open - Close}$ 中做出贪心选择，选取�
 > <ktb></ktb>
 > (Dijkstra 正确性) 当结点 $u$ 即将被加入 $C$ 时，有 $u.d = \delta(s,u)$<br>
 > > 假设 $u$ 是第一个使得该结论不成立的结点 ($u\ne s$ 且 $C\ne\emptyset$)，假设 $w(p)=\delta(s,u)$，假设 $y$ 是 $s$ 到 $u$ 的路上第一个在集合 $V-C$ 中的结点，$x$ 是 $y$ 的前驱，这样就将 $p$ 分解为 $s \overset{p_1}{\leadsto} x \to y \overset{p_2}{\leadsto} u$<br>
-> > <img src="../img/dij.png" width=350 style="margin-left:50px"> <br>
+> > <img src="./img/dij.png" width=350 style="margin-left:50px"> <br>
 > > ($p_1$ 或 $p_2$ 可能不包含任何边) <br>
 > > 由于 $x$ 已在 $C$ 中，必有 $y.d = \delta(s,y)$，又因为所有边非负，有 $y.d = \delta(s,y) \leq \delta(s,u) \leq u.d$; 由于 $u$ 即将被加入 $C$，有 $u.d \leq y.d$，有 $y.d = \delta(s,u) = u.d$ 成立，与假设矛盾 <br>
 > > 这也说明如果有负权边存在，可能导致 $y.d=\delta(s,y) > u.d > \delta(s,u)$，例如
-> > <img src="../img/weg.svg" style="margin-left:50px;margin-top:20px;">
+> > <img src="./img/weg.svg" style="margin-left:50px;margin-top:20px;">
 
 <!-- prettier-ignore-end -->
 
