@@ -98,13 +98,14 @@ nav:
           - pack: _problems/_dp/pack.md
       - List:
           - 1. two sum: _problems/_leetcode/1.md
+          - 2. add two numbers: _problems/_leetcode/2.md
           - 10. regular exp matching: _problems/_leetcode/10_regular_exp_matching.md
           - 23. merge K sorted lists: _problems/_leetcode/23_merge_k_sorted_lists.md
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
           - 53. maximum subarray: _problems/_leetcode/53_maximum_subarray.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
           - 112. path sum: _problems/_leetcode/112.md
-          - 113. path sum II: _problems/_leetcode/113.md
+          - 113. path sum ii: _problems/_leetcode/113.md
           - 120. triangle: _problems/_leetcode/120_triangle.md
           - 121. best time to sell stock: _problems/_leetcode/121_best_time_to_sell_stock.md
           - 122. best time to sell stock ii: _problems/_leetcode/122_best_time_to_sell_stock_ii.md
@@ -116,11 +117,14 @@ nav:
           - 200. number of islands: _problems/_leetcode/200_number_of_islands.md
           - 207. course schedule: _problems/_leetcode/207.md
           - 210. course schedule ii: _problems/_leetcode/210.md
+          - 263. ugly number: _problems/_leetcode/263.md
           - 300. longest increasing subsequence: _problems/_leetcode/300_longest_increasing_subsequence.md
           - 309. best time to sell stock with cooldown: _problems/_leetcode/309_best_time_to_buy_and_sell_stock_with_cooldown.md
           - 310. minumum height trees: _problems/_leetcode/310.md
+          - 313. super ugly number: _problems/_leetcode/313.md
           - 322. coin change: _problems/_leetcode/322_coin_change.md
           - 416. partition equal subset sum: _problems/_leetcode/416_partition_equal_subset_sum.md
+          - 437. path sum iii: _problems/_leetcode/437.md
           - 474. ones and zeroes: _problems/_leetcode/474_ones_and_zeroes.md
           - 494. target sum: _problems/_leetcode/494_target_sum.md
           - 518. coin change 2: _problems/_leetcode/518_coin_change_2.md
