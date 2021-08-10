@@ -96,12 +96,16 @@ nav:
       - DP:
           - linear: _problems/_dp/linear.md
           - pack: _problems/_dp/pack.md
+      - Others: _problems/_others/others.md
       - List:
           - 1. two sum: _problems/_leetcode/1.md
           - 2. add two numbers: _problems/_leetcode/2.md
           - 10. regular exp matching: _problems/_leetcode/10_regular_exp_matching.md
           - 23. merge K sorted lists: _problems/_leetcode/23_merge_k_sorted_lists.md
+          - 31. next permutation: _problems/_leetcode/31.md
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
+          - 46. permutations: _problems/_leetcode/46.md
+          - 47. permutations ii: _problems/_leetcode/47.md
           - 53. maximum subarray: _problems/_leetcode/53_maximum_subarray.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
           - 112. path sum: _problems/_leetcode/112.md
@@ -115,6 +119,7 @@ nav:
           - 152. maximum product subarray: _problems/_leetcode/152_maximum_product_subarray.md
           - 188. best time to sell stock iv: _problems/_leetcode/188_best_time_to_sell_stock_iv.md
           - 200. number of islands: _problems/_leetcode/200_number_of_islands.md
+          - 206. reverse linked list: _problems/_leetcode/206.md
           - 207. course schedule: _problems/_leetcode/207.md
           - 210. course schedule ii: _problems/_leetcode/210.md
           - 263. ugly number: _problems/_leetcode/263.md
