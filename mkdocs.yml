@@ -109,6 +109,7 @@ nav:
           - 46. permutations: _problems/_leetcode/46.md
           - 47. permutations ii: _problems/_leetcode/47.md
           - 53. maximum subarray: _problems/_leetcode/53_maximum_subarray.md
+          - 60. permutation sequence: _problems/_leetcode/60.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
           - 112. path sum: _problems/_leetcode/112.md
           - 113. path sum ii: _problems/_leetcode/113.md
@@ -133,6 +134,7 @@ nav:
           - 413. arithmetic slices: _problems/_leetcode/413.md
           - 416. partition equal subset sum: _problems/_leetcode/416_partition_equal_subset_sum.md
           - 437. path sum iii: _problems/_leetcode/437.md
+          - 446. arithmetic slices ii subsequence: _problems/_leetcode/446.md
           - 474. ones and zeroes: _problems/_leetcode/474_ones_and_zeroes.md
           - 494. target sum: _problems/_leetcode/494_target_sum.md
           - 518. coin change 2: _problems/_leetcode/518_coin_change_2.md
@@ -142,3 +144,4 @@ nav:
           - 803. bricks failing when hit: _problems/_leetcode/803_bricks_failing_when_hit.md
           - 979. distribute coins in binary tree: _problems/_leetcode/979.md
           - 996. number of squareful arrays: _problems/_leetcode/996.md
+          - 1027. longest arithmetic subsequence: _problems/_leetcode/1027.md
