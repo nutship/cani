@@ -71,6 +71,10 @@ markdown_extensions:
 plugins:
   - search
 
+variables:
+  - leetcode_problems_path: &leet _problems/_leetcode
+
+
 nav:
   - home: index.md
   - algorithm🤖:
@@ -96,6 +100,7 @@ nav:
       - DFS / BFS: _problems/_search/search.md
       - DP:
           - linear: _problems/_dp/linear.md
+          - interval: _problems/_dp/interval.md
           - pack: _problems/_dp/pack.md
       - Others: _problems/_others/others.md
       - List:
@@ -127,6 +132,7 @@ nav:
           - 210. course schedule ii: _problems/_leetcode/210.md
           - 263. ugly number: _problems/_leetcode/263.md
           - 300. longest increasing subsequence: _problems/_leetcode/300_longest_increasing_subsequence.md
+          - 312. burst ballons: !!python/object/apply:os.path.join [*leet, 312.md]
           - 309. best time to sell stock with cooldown: _problems/_leetcode/309_best_time_to_buy_and_sell_stock_with_cooldown.md
           - 310. minumum height trees: _problems/_leetcode/310.md
           - 313. super ugly number: _problems/_leetcode/313.md
