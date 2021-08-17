@@ -108,8 +108,10 @@ nav:
           - 2. add two numbers: _problems/_leetcode/2.md
           - 10. regular exp matching: _problems/_leetcode/10_regular_exp_matching.md
           - 15. three sum: !!python/object/apply:os.path.join [*leet, 15.md]
+          - 16. three sum closet: !!python/object/apply:os.path.join [*leet, 16.md]
           - 20. valid parentheses: _problems/_leetcode/20.md
           - 23. merge K sorted lists: _problems/_leetcode/23_merge_k_sorted_lists.md
+          - 27. remove element: !!python/object/apply:os.path.join [*leet, 27.md]
           - 31. next permutation: _problems/_leetcode/31.md
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
           - 46. permutations: _problems/_leetcode/46.md
@@ -134,9 +136,9 @@ nav:
           - 210. course schedule ii: _problems/_leetcode/210.md
           - 263. ugly number: _problems/_leetcode/263.md
           - 300. longest increasing subsequence: _problems/_leetcode/300_longest_increasing_subsequence.md
-          - 312. burst ballons: !!python/object/apply:os.path.join [*leet, 312.md]
           - 309. best time to sell stock with cooldown: _problems/_leetcode/309_best_time_to_buy_and_sell_stock_with_cooldown.md
           - 310. minumum height trees: _problems/_leetcode/310.md
+          - 312. burst ballons: !!python/object/apply:os.path.join [*leet, 312.md]
           - 313. super ugly number: _problems/_leetcode/313.md
           - 322. coin change: _problems/_leetcode/322_coin_change.md
           - 413. arithmetic slices: _problems/_leetcode/413.md
@@ -146,6 +148,7 @@ nav:
           - 474. ones and zeroes: _problems/_leetcode/474_ones_and_zeroes.md
           - 494. target sum: _problems/_leetcode/494_target_sum.md
           - 518. coin change 2: _problems/_leetcode/518_coin_change_2.md
+          - 526. beautiful arrangement: !!python/object/apply:os.path.join [*leet, 526.md]
           - 560. subarrray sum equals k: _problems/_leetcode/560.md
           - 576. out of boundary paths: !!python/object/apply:os.path.join [*leet, 576.md]
           - 671. second minimum node in a binary tree: _problems/_leetcode/671.md
