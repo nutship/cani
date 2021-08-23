@@ -110,6 +110,7 @@ nav:
           - 15. three sum: !!python/object/apply:os.path.join [*leet, 15.md]
           - 16. three sum closet: !!python/object/apply:os.path.join [*leet, 16.md]
           - 20. valid parentheses: _problems/_leetcode/20.md
+          - 22. generate parentheses: !!python/object/apply:os.path.join [*leet, 22.md]
           - 23. merge K sorted lists: _problems/_leetcode/23_merge_k_sorted_lists.md
           - 27. remove element: !!python/object/apply:os.path.join [*leet, 27.md]
           - 31. next permutation: _problems/_leetcode/31.md
@@ -141,6 +142,7 @@ nav:
           - 312. burst ballons: !!python/object/apply:os.path.join [*leet, 312.md]
           - 313. super ugly number: _problems/_leetcode/313.md
           - 322. coin change: _problems/_leetcode/322_coin_change.md
+          - 384. shuffle an array: !!python/object/apply:os.path.join [*leet, 384.md]
           - 413. arithmetic slices: _problems/_leetcode/413.md
           - 416. partition equal subset sum: _problems/_leetcode/416_partition_equal_subset_sum.md
           - 437. path sum iii: _problems/_leetcode/437.md
