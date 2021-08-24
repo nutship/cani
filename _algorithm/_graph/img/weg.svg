@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="188" height="117" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<text x="88.5" y="11.5" font-family="Times New Roman" font-size="20">s</text>
+	<text x="2.5" y="101.5" font-family="Times New Roman" font-size="20">y</text>
+	<text x="87.5" y="101.5" font-family="Times New Roman" font-size="20">a</text>
+	<text x="175.5" y="101.5" font-family="Times New Roman" font-size="20">u</text>
+	<text x="27.5" y="44.5" font-family="Times New Roman" font-size="20">3</text>
+	<text x="77.5" y="53.5" font-family="Times New Roman" font-size="20">1</text>
+	<text x="137.5" y="44.5" font-family="Times New Roman" font-size="20">2</text>
+	<text x="30.5" y="115.5" font-family="Times New Roman" font-size="20">-10</text>
+	<text x="126.5" y="115.5" font-family="Times New Roman" font-size="20">3</text>
+	<polygon stroke="black" stroke-width="1" points="81.5,16.5 21.173,80.903"/>
+	<polygon fill="black" stroke-width="1" points="21.173,80.903 30.291,78.483 22.993,71.647"/>
+	<polygon stroke="black" stroke-width="1" points="27.5,95.5 73.5,95.5"/>
+	<polygon fill="black" stroke-width="1" points="73.5,95.5 65.5,90.5 65.5,100.5"/>
+	<polygon stroke="black" stroke-width="1" points="113.5,95.5 161.5,95.5"/>
+	<polygon fill="black" stroke-width="1" points="161.5,95.5 153.5,90.5 153.5,100.5"/>
+	<polygon stroke="black" stroke-width="1" points="93.5,25.5 93.5,75.5"/>
+	<polygon fill="black" stroke-width="1" points="93.5,75.5 98.5,67.5 88.5,67.5"/>
+	<polygon stroke="black" stroke-width="1" points="107.482,19.8 167.518,81.2"/>
+	<polygon fill="black" stroke-width="1" points="167.518,81.2 165.5,71.984 158.35,78.975"/>
+</svg>
