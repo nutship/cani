@@ -102,6 +102,7 @@ nav:
           - linear: _problems/_dp/linear.md
           - interval: _problems/_dp/interval.md
           - pack: _problems/_dp/pack.md
+      - Simulation: _problems/_simul/simul.md
       - Others: _problems/_others/others.md
       - List:
           - 1. two sum: _problems/_leetcode/1.md
@@ -118,6 +119,7 @@ nav:
           - 46. permutations: _problems/_leetcode/46.md
           - 47. permutations ii: _problems/_leetcode/47.md
           - 53. maximum subarray: _problems/_leetcode/53_maximum_subarray.md
+          - 57. insert interval: !!python/object/apply:os.path.join [*leet, 57.md]
           - 60. permutation sequence: _problems/_leetcode/60.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
           - 112. path sum: _problems/_leetcode/112.md
@@ -126,11 +128,13 @@ nav:
           - 121. best time to sell stock: _problems/_leetcode/121_best_time_to_sell_stock.md
           - 122. best time to sell stock ii: _problems/_leetcode/122_best_time_to_sell_stock_ii.md
           - 123. best time to sell stock iii: _problems/_leetcode/123_best_time_to_sell_stock_iii.md
+          - 124. binary tree maximum path sum: !!python/object/apply:os.path.join [*leet, 124.md]
           - 128. longest consecutive sequence: _problems/_leetcode/128_longest_consecutive_sequence.md
           - 130. surround regions: _problems/_leetcode/130_surrounded_regions.md
           - 152. maximum product subarray: _problems/_leetcode/152_maximum_product_subarray.md
           - 167. two sum ii: !!python/object/apply:os.path.join [*leet, 167.md]
           - 188. best time to sell stock iv: _problems/_leetcode/188_best_time_to_sell_stock_iv.md
+          - 198. house robbery: !!python/object/apply:os.path.join [*leet, 198.md]
           - 200. number of islands: _problems/_leetcode/200_number_of_islands.md
           - 206. reverse linked list: _problems/_leetcode/206.md
           - 207. course schedule: _problems/_leetcode/207.md
@@ -151,6 +155,7 @@ nav:
           - 494. target sum: _problems/_leetcode/494_target_sum.md
           - 518. coin change 2: _problems/_leetcode/518_coin_change_2.md
           - 526. beautiful arrangement: !!python/object/apply:os.path.join [*leet, 526.md]
+          - 543. diameter of binary tree: !!python/object/apply:os.path.join [*leet, 543.md]
           - 560. subarrray sum equals k: _problems/_leetcode/560.md
           - 576. out of boundary paths: !!python/object/apply:os.path.join [*leet, 576.md]
           - 671. second minimum node in a binary tree: _problems/_leetcode/671.md
