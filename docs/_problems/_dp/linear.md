@@ -31,6 +31,7 @@
 
 <div class="outerlink">
 <a href="../_leetcode/198.md">198. 打家劫舍</a> <br>
+<a href="../_leetcode/213.md">213. 打家劫舍 2</a> <br>
 </div>
 
 ### 双串
@@ -54,3 +55,11 @@
 <div class="outerlink">
 <a href="../_leetcode/576.html">576. 出界的路径数</a> (坑多)<br>
 </div>
+
+### 贪心
+
+<a href="../_leetcode/621.html">621. 任务调度</a> <br>
+
+### 不知道是啥
+
+<a href="../_leetcode/600.html">600. 不含连续 1 的非负整数</a> <br>
