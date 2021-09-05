@@ -13,5 +13,5 @@ hashmap 换时间:
 
 <div class="outerlink">
 <a href="../_leetcode/27.html">27. 移除元素</a> (经典双指针) <br>
-<a href="../_leetcode/42.html">42. 接雨水 </a> (单调栈/dp->双指针) <br>
+<a href="../_leetcode/42.html">42. 接雨水 </a> (单调栈/dp+双指针) <br>
 </div>
