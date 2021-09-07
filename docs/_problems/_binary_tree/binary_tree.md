@@ -13,3 +13,8 @@
 <div class="outerlink">
 <a href="../_leetcode/979.html">979. 在二叉树中分配硬币</a> (后序遍历，背后暗含自底向上的贪心选择)<br>
 </div>
+
+<div class="outerlink">
+<a href="../../_leetcode/105/">105. 从前序与中序遍历序列构造二叉树</a> (递归构造 / 根据非递归遍历构造) <br>
+<a href="../../_leetcode/106/">106. 从中序与后序遍历序列构造二叉树</a> () <br>
+</div>

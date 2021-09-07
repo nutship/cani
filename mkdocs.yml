@@ -123,6 +123,8 @@ nav:
           - 57. insert interval: !!python/object/apply:os.path.join [*leet, 57.md]
           - 60. permutation sequence: _problems/_leetcode/60.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
+          - 105. construct binary tree from preorder and inorder traversal: !!python/object/apply:os.path.join [*leet, 105.md]
+          - 106. construct binary tree from inorder and postorder traversal: !!python/object/apply:os.path.join [*leet, 106.md]
           - 112. path sum: _problems/_leetcode/112.md
           - 113. path sum ii: _problems/_leetcode/113.md
           - 120. triangle: _problems/_leetcode/120_triangle.md
