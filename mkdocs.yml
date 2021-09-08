@@ -123,6 +123,9 @@ nav:
           - 57. insert interval: !!python/object/apply:os.path.join [*leet, 57.md]
           - 60. permutation sequence: _problems/_leetcode/60.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
+          - 101. symmetric tree: !!python/object/apply:os.path.join [*leet, 101.md]
+          - 102. binary tree level order traversal: !!python/object/apply:os.path.join [*leet, 102.md]
+          - 103. binary tree zigzag level order traversal: !!python/object/apply:os.path.join [*leet, 103.md]
           - 105. construct binary tree from preorder and inorder traversal: !!python/object/apply:os.path.join [*leet, 105.md]
           - 106. construct binary tree from inorder and postorder traversal: !!python/object/apply:os.path.join [*leet, 106.md]
           - 112. path sum: _problems/_leetcode/112.md
@@ -134,6 +137,7 @@ nav:
           - 124. binary tree maximum path sum: !!python/object/apply:os.path.join [*leet, 124.md]
           - 128. longest consecutive sequence: _problems/_leetcode/128_longest_consecutive_sequence.md
           - 130. surround regions: _problems/_leetcode/130_surrounded_regions.md
+          - 134. gas station: !!python/object/apply:os.path.join [*leet, 134.md]
           - 152. maximum product subarray: _problems/_leetcode/152_maximum_product_subarray.md
           - 167. two sum ii: !!python/object/apply:os.path.join [*leet, 167.md]
           - 188. best time to sell stock iv: _problems/_leetcode/188_best_time_to_sell_stock_iv.md
