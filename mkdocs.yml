@@ -84,6 +84,7 @@ nav:
         - union-find set: _algorithm/_ds/ufset.md
       - Sort:
         - merge sort: _algorithm/_sort/mergesort.md
+      - Binary Search: _algorithm/_binary_search/binary_search.md
       - Advanced Techniques:
         - 1. dynamic programming: _algorithm/_advt/1.md
         - 2. greedy algorithm: _algorithm/_advt/2.md
@@ -145,6 +146,7 @@ nav:
           - 200. number of islands: _problems/_leetcode/200_number_of_islands.md
           - 206. reverse linked list: _problems/_leetcode/206.md
           - 207. course schedule: _problems/_leetcode/207.md
+          - 209. mininum size subarray sum: !!python/object/apply:os.path.join [*leet, 209.md]
           - 210. course schedule ii: _problems/_leetcode/210.md
           - 213. house robbery ii: !!python/object/apply:os.path.join [*leet, 213.md]
           - 263. ugly number: _problems/_leetcode/263.md
