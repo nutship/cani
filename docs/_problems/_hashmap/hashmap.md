@@ -15,3 +15,19 @@ hashmap 换时间:
 <a href="../_leetcode/27.html">27. 移除元素</a> (经典双指针) <br>
 <a href="../_leetcode/42.html">42. 接雨水 </a> (单调栈/dp+双指针) <br>
 </div>
+
+滑动窗口
+
+<div class="outerlink">
+<a href="../_leetcode/209/">209. 长度最小的子数组</a> (前缀和+二分 / 滑动窗口)<br>
+</div>
+
+<a href="../_leetcode/1894/">1894. 找到需要补充粉笔的学生编号</a> (前缀和 + 二分) <br>
+<a href="../_leetcode/155/">155. 最小栈</a> (记录栈状态)<br>
+
+链表
+
+<div class="outerlink">
+<a href="../_leetcode/876/">876. 链表的中间结点</a> (快慢指针) <br>
+<a href="../_leetcode/143/">143. 重排链表</a> (中点 + 逆序 + 合并) <br>
+</div>
