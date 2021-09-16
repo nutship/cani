@@ -2,8 +2,8 @@
 
 <div class="outerlink">
 <a href="../_leetcode/312">312. 戳气球</a> (正难则反) <br>
-<a href="../_leetcode/664/">664. 奇怪的打印及</a> (取巧构造解，笼统子问题)<br>
-<a href="../_leetcode/.html"></a><br>
+<a href="../_leetcode/664/">664. 奇怪的打印机</a> (取巧构造解，笼统子问题) <br>
+<a href="../_leetcode/887/">887. 鸡蛋掉落</a> (DP + 二分) <br>
 
 </div>
 
