@@ -94,6 +94,8 @@ nav:
         - 2. minium spanning trees: _algorithm/_graph/mst.md
         - 3. single-source shortest paths: _algorithm/_graph/ss_shortest.md
         - 4. all-pairs shortest paths: _algorithm/_graph/ss_allpairs.md
+      - String Algorithms:
+        - 1. trie: _algorithm/_string/trie.md
   - problems🏁:
       - Preface: _problems/index.md
       - HashMap: _problems/_hashmap/hashmap.md
@@ -124,6 +126,7 @@ nav:
           - 57. insert interval: !!python/object/apply:os.path.join [*leet, 57.md]
           - 60. permutation sequence: _problems/_leetcode/60.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
+          - 79. word search: !!python/object/apply:os.path.join [*leet, 79.md]
           - 101. symmetric tree: !!python/object/apply:os.path.join [*leet, 101.md]
           - 102. binary tree level order traversal: !!python/object/apply:os.path.join [*leet, 102.md]
           - 103. binary tree zigzag level order traversal: !!python/object/apply:os.path.join [*leet, 103.md]
@@ -149,6 +152,7 @@ nav:
           - 200. number of islands: _problems/_leetcode/200_number_of_islands.md
           - 206. reverse linked list: _problems/_leetcode/206.md
           - 207. course schedule: _problems/_leetcode/207.md
+          - 208. implement trie prefix tree: !!python/object/apply:os.path.join [*leet, 208.md]
           - 209. mininum size subarray sum: !!python/object/apply:os.path.join [*leet, 209.md]
           - 210. course schedule ii: _problems/_leetcode/210.md
           - 213. house robbery ii: !!python/object/apply:os.path.join [*leet, 213.md]
