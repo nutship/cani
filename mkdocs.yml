@@ -142,6 +142,7 @@ nav:
           - 128. longest consecutive sequence: _problems/_leetcode/128_longest_consecutive_sequence.md
           - 130. surround regions: _problems/_leetcode/130_surrounded_regions.md
           - 134. gas station: !!python/object/apply:os.path.join [*leet, 134.md]
+          - 139. word break: !!python/object/apply:os.path.join [*leet, 139.md]
           - 143. reorder list: !!python/object/apply:os.path.join [*leet, 143.md]
           - 152. maximum product subarray: _problems/_leetcode/152_maximum_product_subarray.md
           - 155. min stack: !!python/object/apply:os.path.join [*leet, 155.md]
@@ -155,6 +156,7 @@ nav:
           - 208. implement trie prefix tree: !!python/object/apply:os.path.join [*leet, 208.md]
           - 209. mininum size subarray sum: !!python/object/apply:os.path.join [*leet, 209.md]
           - 210. course schedule ii: _problems/_leetcode/210.md
+          - 212. word search ii: !!python/object/apply:os.path.join [*leet, 212.md]
           - 213. house robbery ii: !!python/object/apply:os.path.join [*leet, 213.md]
           - 263. ugly number: _problems/_leetcode/263.md
           - 300. longest increasing subsequence: _problems/_leetcode/300_longest_increasing_subsequence.md

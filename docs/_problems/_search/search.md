@@ -14,4 +14,5 @@
 <a href="../_leetcode/996/">996. 正方形数组的数目</a> (全排列 2 的变形) <br>
 <a href="../_leetcode/22/">22. 括号生成</a> <br>
 <a href="../_leetcode/72/">72. 单词搜索</a> <br>
+<a href="../_leetcode/212/">212. 单词搜索 II</a> (单词搜索 + trie) <br>
 </div
