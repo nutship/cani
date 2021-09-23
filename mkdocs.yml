@@ -148,6 +148,7 @@ nav:
           - 152. maximum product subarray: _problems/_leetcode/152_maximum_product_subarray.md
           - 155. min stack: !!python/object/apply:os.path.join [*leet, 155.md]
           - 162. find peak element: !!python/object/apply:os.path.join [*leet, 162.md]
+          - 165. compare version numbers: !!python/object/apply:os.path.join [*leet, 165.md]
           - 167. two sum ii: !!python/object/apply:os.path.join [*leet, 167.md]
           - 188. best time to sell stock iv: _problems/_leetcode/188_best_time_to_sell_stock_iv.md
           - 198. house robbery: !!python/object/apply:os.path.join [*leet, 198.md]
