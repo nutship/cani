@@ -118,6 +118,7 @@ nav:
           - 23. merge K sorted lists: _problems/_leetcode/23_merge_k_sorted_lists.md
           - 27. remove element: !!python/object/apply:os.path.join [*leet, 27.md]
           - 31. next permutation: _problems/_leetcode/31.md
+          - 34. find first and last position of element in sorted array: !!python/object/apply:os.path.join [*leet, 34.md]
           - 42. trapping rain water: !!python/object/apply:os.path.join [*leet, 42.md]
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
           - 46. permutations: _problems/_leetcode/46.md
