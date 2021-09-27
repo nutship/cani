@@ -192,6 +192,7 @@ nav:
           - 887. super egg drop: !!python/object/apply:os.path.join [*leet, 887.md]
           - 876. middle of the linked list: !!python/object/apply:os.path.join [*leet, 876.md]
           - 979. distribute coins in binary tree: _problems/_leetcode/979.md
+          - 987. vertical order traversal of a binary tree: !!python/object/apply:os.path.join [*leet, 987.md]
           - 996. number of squareful arrays: _problems/_leetcode/996.md
           - 1027. longest arithmetic subsequence: _problems/_leetcode/1027.md
           - 1894. find the student that will replace the chalk: !!python/object/apply:os.path.join [*leet, 1894.md]
