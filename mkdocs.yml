@@ -143,6 +143,7 @@ nav:
           - 128. longest consecutive sequence: _problems/_leetcode/128_longest_consecutive_sequence.md
           - 130. surround regions: _problems/_leetcode/130_surrounded_regions.md
           - 134. gas station: !!python/object/apply:os.path.join [*leet, 134.md]
+          - 138. copy list with random pointer: !!python/object/apply:os.path.join [*leet, 138.md]
           - 139. word break: !!python/object/apply:os.path.join [*leet, 139.md]
           - 140. word break ii: !!python/object/apply:os.path.join [*leet, 140.md]
           - 143. reorder list: !!python/object/apply:os.path.join [*leet, 143.md]

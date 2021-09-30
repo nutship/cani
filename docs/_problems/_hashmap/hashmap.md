@@ -33,6 +33,7 @@ hashmap 换时间:
 <div class="outerlink">
 <a href="../_leetcode/876/">876. 链表的中间结点</a> (快慢指针) <br>
 <a href="../_leetcode/143/">143. 重排链表</a> (中点 + 逆序 + 合并) <br>
+<a href="../_leetcode/138/">138. 复制带随机指针的链表</a> <br>
 </div>
 
 普通栈:
