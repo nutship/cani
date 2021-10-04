@@ -172,6 +172,7 @@ nav:
           - 337. house robbery iii: !!python/object/apply:os.path.join [*leet, 337.md]
           - 384. shuffle an array: !!python/object/apply:os.path.join [*leet, 384.md]
           - 394. decode string: !!python/object/apply:os.path.join [*leet, 394.md]
+          - 410. split array largest sum: !!python/object/apply:os.path.join [*leet, 410.md]
           - 413. arithmetic slices: _problems/_leetcode/413.md
           - 416. partition equal subset sum: _problems/_leetcode/416_partition_equal_subset_sum.md
           - 437. path sum iii: _problems/_leetcode/437.md
