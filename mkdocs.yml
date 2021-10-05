@@ -171,11 +171,13 @@ nav:
           - 322. coin change: _problems/_leetcode/322_coin_change.md
           - 337. house robbery iii: !!python/object/apply:os.path.join [*leet, 337.md]
           - 384. shuffle an array: !!python/object/apply:os.path.join [*leet, 384.md]
+          - 386. lexicographical numbers: !!python/object/apply:os.path.join [*leet, 386.md]
           - 394. decode string: !!python/object/apply:os.path.join [*leet, 394.md]
           - 410. split array largest sum: !!python/object/apply:os.path.join [*leet, 410.md]
           - 413. arithmetic slices: _problems/_leetcode/413.md
           - 416. partition equal subset sum: _problems/_leetcode/416_partition_equal_subset_sum.md
           - 437. path sum iii: _problems/_leetcode/437.md
+          - 440. kth smallest in lexicographical order: !!python/object/apply:os.path.join [*leet, 440.md]
           - 446. arithmetic slices ii subsequence: _problems/_leetcode/446.md
           - 447. number of boomerangs: !!python/object/apply:os.path.join [*leet, 447.md]
           - 474. ones and zeroes: _problems/_leetcode/474_ones_and_zeroes.md

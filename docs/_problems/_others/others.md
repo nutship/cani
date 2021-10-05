@@ -7,4 +7,6 @@
 <a href="../_leetcode/384.html">384. 打乱数组</a> (洗牌算法) <br>
 <a href="../_leetcode/134/">134. 加油站</a> (加速匹配) <br>
 <a href="../_leetcode/208/">208. 实现 Trie</a> <br>
+<a href="../_leetcode/386/">386. 字典序排数</a> (trie 前序遍历) <br>
+<a href="../_leetcode/440/">440. 字典序的第 K 小数字</a> (Kth trie) <br>
 </div>
