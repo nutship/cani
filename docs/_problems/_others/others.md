@@ -9,4 +9,5 @@
 <a href="../_leetcode/208/">208. 实现 Trie</a> <br>
 <a href="../_leetcode/386/">386. 字典序排数</a> (trie 前序遍历) <br>
 <a href="../_leetcode/440/">440. 字典序的第 K 小数字</a> (Kth trie) <br>
+<a href="../_leetcode/179/">179. 最大数</a> (排序) <br>
 </div>

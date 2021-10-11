@@ -61,6 +61,8 @@
 ### 贪心
 
 <a href="../_leetcode/621.html">621. 任务调度</a> <br>
+<a href="../_leetcode/55/">55. 跳跃游戏</a> <br>
+<a href="../_leetcode/45/">45. 跳跃游戏 ii</a> <br>
 
 ### 不知道是啥
 

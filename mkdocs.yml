@@ -121,9 +121,11 @@ nav:
           - 34. find first and last position of element in sorted array: !!python/object/apply:os.path.join [*leet, 34.md]
           - 42. trapping rain water: !!python/object/apply:os.path.join [*leet, 42.md]
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
+          - 45. jump game ii: !!python/object/apply:os.path.join [*leet, 45.md]
           - 46. permutations: _problems/_leetcode/46.md
           - 47. permutations ii: _problems/_leetcode/47.md
           - 53. maximum subarray: _problems/_leetcode/53_maximum_subarray.md
+          - 55. jump game: !!python/object/apply:os.path.join [*leet, 55.md]
           - 57. insert interval: !!python/object/apply:os.path.join [*leet, 57.md]
           - 60. permutation sequence: _problems/_leetcode/60.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
@@ -152,6 +154,7 @@ nav:
           - 162. find peak element: !!python/object/apply:os.path.join [*leet, 162.md]
           - 165. compare version numbers: !!python/object/apply:os.path.join [*leet, 165.md]
           - 167. two sum ii: !!python/object/apply:os.path.join [*leet, 167.md]
+          - 179. largest number: !!python/object/apply:os.path.join [*leet, 179.md]
           - 188. best time to sell stock iv: _problems/_leetcode/188_best_time_to_sell_stock_iv.md
           - 198. house robbery: !!python/object/apply:os.path.join [*leet, 198.md]
           - 200. number of islands: _problems/_leetcode/200_number_of_islands.md
