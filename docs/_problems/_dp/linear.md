@@ -63,6 +63,7 @@
 <a href="../_leetcode/621.html">621. 任务调度</a> <br>
 <a href="../_leetcode/55/">55. 跳跃游戏</a> <br>
 <a href="../_leetcode/45/">45. 跳跃游戏 ii</a> <br>
+<a href="../_leetcode/670/">670. 最大交换</a> (贪心 + 空间换时间) <br>
 
 ### 不知道是啥
 

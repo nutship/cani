@@ -157,6 +157,7 @@ nav:
           - 179. largest number: !!python/object/apply:os.path.join [*leet, 179.md]
           - 188. best time to sell stock iv: _problems/_leetcode/188_best_time_to_sell_stock_iv.md
           - 198. house robbery: !!python/object/apply:os.path.join [*leet, 198.md]
+          - 199. binary tree right side view: !!python/object/apply:os.path.join [*leet, 199.md]
           - 200. number of islands: _problems/_leetcode/200_number_of_islands.md
           - 206. reverse linked list: _problems/_leetcode/206.md
           - 207. course schedule: _problems/_leetcode/207.md
@@ -193,6 +194,7 @@ nav:
           - 600. non-negative integers without consective 1s: !!python/object/apply:os.path.join [*leet, 600.md]
           - 621. task scheduler: !!python/object/apply:os.path.join [*leet, 621.md]
           - 664. strange printer: !!python/object/apply:os.path.join [*leet, 664.md]
+          - 670. maximum swap: !!python/object/apply:os.path.join [*leet, 670.md]
           - 671. second minimum node in a binary tree: _problems/_leetcode/671.md
           - 714. best time to sell stock with transaction fee: _problems/_leetcode/714_best_time_to_buy_and_sell_stock_with_transaction_fee.md
           - 803. bricks failing when hit: _problems/_leetcode/803_bricks_failing_when_hit.md
