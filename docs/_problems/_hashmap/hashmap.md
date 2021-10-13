@@ -28,6 +28,7 @@ hashmap 换时间:
 <a href="../_leetcode/162/">162. 寻找峰值</a> (二分) <br>
 <a href=../_leetcode/34/>34. 在排序数组中查找元素的第一个和最后一个位置</a> (二分) <br>
 <a href="../_leetcode/410/">410. 分割数组的最大值</a> (dp / 二分) <br>
+<a href="../../_leetcode/875/">875. 爱吃香蕉的珂珂</a> <br>
 
 链表
 
