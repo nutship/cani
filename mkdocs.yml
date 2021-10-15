@@ -130,6 +130,8 @@ nav:
           - 60. permutation sequence: _problems/_leetcode/60.md
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
           - 79. word search: !!python/object/apply:os.path.join [*leet, 79.md]
+          - 84. largest rectangle in histogram: !!python/object/apply:os.path.join [*leet, 84.md]
+          - 85. maximal rectangle: !!python/object/apply:os.path.join [*leet, 85.md]
           - 101. symmetric tree: !!python/object/apply:os.path.join [*leet, 101.md]
           - 102. binary tree level order traversal: !!python/object/apply:os.path.join [*leet, 102.md]
           - 103. binary tree zigzag level order traversal: !!python/object/apply:os.path.join [*leet, 103.md]

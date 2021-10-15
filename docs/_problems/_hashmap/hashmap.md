@@ -12,8 +12,10 @@ hashmap 换时间:
 双指针
 
 <div class="outerlink">
-<a href="../_leetcode/27.html">27. 移除元素</a> (经典双指针) <br>
-<a href="../_leetcode/42.html">42. 接雨水 </a> (单调栈/dp+双指针) <br>
+<a href="../../_leetcode/27/">27. 移除元素</a> (经典双指针) <br>
+<a href="../../_leetcode/42/">42. 接雨水 </a> (单调栈/dp+双指针) <br>
+<a href="../../_leetcode/84/">84. 柱状图中的最大矩形</a> (典型单调栈) <br>
+<a href="../../_leetcode/503/">503. 下一个更大元素 II</a> (单调栈) <br>
 </div>
 
 滑动窗口
