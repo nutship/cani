@@ -6,6 +6,7 @@
 <a href="../_leetcode/300_longest_increasing_subsequence.html">300. LIS</a> (经典单串) <br>
 <a href="../_leetcode/53_maximum_subarray.html">53. 最大子序和</a> (经典单串) <br>
 <a href="../_leetcode/152_maximum_product_subarray.html">152. 乘积最大子数组</a> (最大子序和变体) <br>
+<a href="../../_leetcode/91/">91. 解码方法</a> <br>
 </div>
 
 等差系列

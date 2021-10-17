@@ -132,6 +132,7 @@ nav:
           - 79. word search: !!python/object/apply:os.path.join [*leet, 79.md]
           - 84. largest rectangle in histogram: !!python/object/apply:os.path.join [*leet, 84.md]
           - 85. maximal rectangle: !!python/object/apply:os.path.join [*leet, 85.md]
+          - 91. decode ways: !!python/object/apply:os.path.join [*leet, 91.md]
           - 101. symmetric tree: !!python/object/apply:os.path.join [*leet, 101.md]
           - 102. binary tree level order traversal: !!python/object/apply:os.path.join [*leet, 102.md]
           - 103. binary tree zigzag level order traversal: !!python/object/apply:os.path.join [*leet, 103.md]
@@ -192,6 +193,7 @@ nav:
           - 518. coin change 2: _problems/_leetcode/518_coin_change_2.md
           - 526. beautiful arrangement: !!python/object/apply:os.path.join [*leet, 526.md]
           - 543. diameter of binary tree: !!python/object/apply:os.path.join [*leet, 543.md]
+          - 556. next greater element iii: !!python/object/apply:os.path.join [*leet, 556.md]
           - 560. subarrray sum equals k: _problems/_leetcode/560.md
           - 576. out of boundary paths: !!python/object/apply:os.path.join [*leet, 576.md]
           - 600. non-negative integers without consective 1s: !!python/object/apply:os.path.join [*leet, 600.md]
