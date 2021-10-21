@@ -13,10 +13,12 @@ hashmap 换时间:
 
 <div class="outerlink">
 <a href="../../_leetcode/27/">27. 移除元素</a> (经典双指针) <br>
+<a href="../../_leetcode/633/">633. 平方数之和</a> (经典双指针) <br>
 <a href="../../_leetcode/42/">42. 接雨水 </a> (单调栈/dp+双指针) <br>
 <a href="../../_leetcode/84/">84. 柱状图中的最大矩形</a> (枚举 -> 典型单调栈) <br>
 <a href="../../_leetcode/85/">85. 最大矩形</a> (枚举 -> 单调栈) <br>
 <a href="../../_leetcode/503/">503. 下一个更大元素 II</a> (单调栈) <br>
+<a href="../../_leetcode/239/">239. 滑动窗口最大值</a> (单调栈) <br>
 </div>
 
 滑动窗口

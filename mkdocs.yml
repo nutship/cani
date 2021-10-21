@@ -169,6 +169,7 @@ nav:
           - 210. course schedule ii: _problems/_leetcode/210.md
           - 212. word search ii: !!python/object/apply:os.path.join [*leet, 212.md]
           - 213. house robbery ii: !!python/object/apply:os.path.join [*leet, 213.md]
+          - 239. sliding window maximum: !!python/object/apply:os.path.join [*leet, 239.md]
           - 263. ugly number: _problems/_leetcode/263.md
           - 300. longest increasing subsequence: _problems/_leetcode/300_longest_increasing_subsequence.md
           - 309. best time to sell stock with cooldown: _problems/_leetcode/309_best_time_to_buy_and_sell_stock_with_cooldown.md
@@ -198,6 +199,7 @@ nav:
           - 576. out of boundary paths: !!python/object/apply:os.path.join [*leet, 576.md]
           - 600. non-negative integers without consective 1s: !!python/object/apply:os.path.join [*leet, 600.md]
           - 621. task scheduler: !!python/object/apply:os.path.join [*leet, 621.md]
+          - 633. sum of square numbers: !!python/object/apply:os.path.join [*leet, 633.md]
           - 664. strange printer: !!python/object/apply:os.path.join [*leet, 664.md]
           - 670. maximum swap: !!python/object/apply:os.path.join [*leet, 670.md]
           - 671. second minimum node in a binary tree: _problems/_leetcode/671.md
