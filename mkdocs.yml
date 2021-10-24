@@ -119,6 +119,7 @@ nav:
           - 27. remove element: !!python/object/apply:os.path.join [*leet, 27.md]
           - 31. next permutation: _problems/_leetcode/31.md
           - 34. find first and last position of element in sorted array: !!python/object/apply:os.path.join [*leet, 34.md]
+          - 39. combination sum: !!python/object/apply:os.path.join [*leet, 39.md]
           - 42. trapping rain water: !!python/object/apply:os.path.join [*leet, 42.md]
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
           - 45. jump game ii: !!python/object/apply:os.path.join [*leet, 45.md]
@@ -128,10 +129,12 @@ nav:
           - 55. jump game: !!python/object/apply:os.path.join [*leet, 55.md]
           - 57. insert interval: !!python/object/apply:os.path.join [*leet, 57.md]
           - 60. permutation sequence: _problems/_leetcode/60.md
+          - 71. simplify path: !!python/object/apply:os.path.join [*leet, 71.md]
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
           - 79. word search: !!python/object/apply:os.path.join [*leet, 79.md]
           - 84. largest rectangle in histogram: !!python/object/apply:os.path.join [*leet, 84.md]
           - 85. maximal rectangle: !!python/object/apply:os.path.join [*leet, 85.md]
+          - 86. partition list: !!python/object/apply:os.path.join [*leet, 86.md]
           - 91. decode ways: !!python/object/apply:os.path.join [*leet, 91.md]
           - 101. symmetric tree: !!python/object/apply:os.path.join [*leet, 101.md]
           - 102. binary tree level order traversal: !!python/object/apply:os.path.join [*leet, 102.md]
@@ -156,6 +159,7 @@ nav:
           - 155. min stack: !!python/object/apply:os.path.join [*leet, 155.md]
           - 162. find peak element: !!python/object/apply:os.path.join [*leet, 162.md]
           - 165. compare version numbers: !!python/object/apply:os.path.join [*leet, 165.md]
+          - 166. fraction to recurring decimal: !!python/object/apply:os.path.join [*leet, 166.md]
           - 167. two sum ii: !!python/object/apply:os.path.join [*leet, 167.md]
           - 179. largest number: !!python/object/apply:os.path.join [*leet, 179.md]
           - 188. best time to sell stock iv: _problems/_leetcode/188_best_time_to_sell_stock_iv.md
