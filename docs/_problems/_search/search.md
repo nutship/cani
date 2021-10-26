@@ -15,5 +15,6 @@
 <a href="../_leetcode/22/">22. 括号生成</a> <br>
 <a href="../_leetcode/72/">72. 单词搜索</a> <br>
 <a href="../_leetcode/212/">212. 单词搜索 II</a> (单词搜索 + trie) <br>
-<a href="../../_leetcode/39/">39. 组合综合</a> (参考完全背包的 dfs)<br>
+<a href="../../_leetcode/39/">39. 组合总和</a> (参考完全背包的 dfs)<br>
+<a href="../../_leetcode/40/">40. 组合总和 II</a> <br>
 </div>
