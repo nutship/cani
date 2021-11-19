@@ -69,3 +69,5 @@
 ### 不知道是啥
 
 <a href="../_leetcode/600.html">600. 不含连续 1 的非负整数</a> <br>
+
+<a href="../_leetcode/96/">96. 不同的二叉搜索树</a> (DP/Catalan 数)<br>
