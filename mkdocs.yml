@@ -121,6 +121,7 @@ nav:
           - 34. find first and last position of element in sorted array: !!python/object/apply:os.path.join [*leet, 34.md]
           - 39. combination sum: !!python/object/apply:os.path.join [*leet, 39.md]
           - 40. combination sum ii: !!python/object/apply:os.path.join [*leet, 40.md]
+          - 41. first missing positive: !!python/object/apply:os.path.join [*leet, 41.md]
           - 42. trapping rain water: !!python/object/apply:os.path.join [*leet, 42.md]
           - 44. wildcard matching: _problems/_leetcode/44_wildcard_matching.md
           - 45. jump game ii: !!python/object/apply:os.path.join [*leet, 45.md]
@@ -138,6 +139,7 @@ nav:
           - 86. partition list: !!python/object/apply:os.path.join [*leet, 86.md]
           - 91. decode ways: !!python/object/apply:os.path.join [*leet, 91.md]
           - 96. unique binary search trees: !!python/object/apply:os.path.join [*leet, 96.md]
+          - 97. interleaving string: !!python/object/apply:os.path.join [*leet, 97.md]
           - 101. symmetric tree: !!python/object/apply:os.path.join [*leet, 101.md]
           - 102. binary tree level order traversal: !!python/object/apply:os.path.join [*leet, 102.md]
           - 103. binary tree zigzag level order traversal: !!python/object/apply:os.path.join [*leet, 103.md]
@@ -175,8 +177,10 @@ nav:
           - 210. course schedule ii: _problems/_leetcode/210.md
           - 212. word search ii: !!python/object/apply:os.path.join [*leet, 212.md]
           - 213. house robbery ii: !!python/object/apply:os.path.join [*leet, 213.md]
+          - 221. maximal square: !!python/object/apply:os.path.join [*leet, 221.md]
           - 239. sliding window maximum: !!python/object/apply:os.path.join [*leet, 239.md]
           - 263. ugly number: _problems/_leetcode/263.md
+          - 268. missing number: !!python/object/apply:os.path.join [*leet, 268.md]
           - 300. longest increasing subsequence: _problems/_leetcode/300_longest_increasing_subsequence.md
           - 309. best time to sell stock with cooldown: _problems/_leetcode/309_best_time_to_buy_and_sell_stock_with_cooldown.md
           - 310. minumum height trees: _problems/_leetcode/310.md
@@ -215,8 +219,10 @@ nav:
           - 875. koko eating bananas: !!python/object/apply:os.path.join [*leet, 875.md]
           - 876. middle of the linked list: !!python/object/apply:os.path.join [*leet, 876.md]
           - 887. super egg drop: !!python/object/apply:os.path.join [*leet, 887.md]
+          - 939. minimum area rectangle: !!python/object/apply:os.path.join [*leet, 939.md]
           - 979. distribute coins in binary tree: _problems/_leetcode/979.md
           - 987. vertical order traversal of a binary tree: !!python/object/apply:os.path.join [*leet, 987.md]
           - 996. number of squareful arrays: _problems/_leetcode/996.md
           - 1027. longest arithmetic subsequence: _problems/_leetcode/1027.md
+          - 1277. count square submatrices with all ones: !!python/object/apply:os.path.join [*leet, 1277.md]
           - 1894. find the student that will replace the chalk: !!python/object/apply:os.path.join [*leet, 1894.md]
