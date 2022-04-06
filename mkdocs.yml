@@ -133,6 +133,7 @@ nav:
           - 60. permutation sequence: _problems/_leetcode/60.md
           - 71. simplify path: !!python/object/apply:os.path.join [*leet, 71.md]
           - 72. edit distance: _problems/_leetcode/72_edit_distance.md
+          - 74. search a 2d matrix: !!python/object/apply:os.path.join [*leet, 74.md]
           - 79. word search: !!python/object/apply:os.path.join [*leet, 79.md]
           - 84. largest rectangle in histogram: !!python/object/apply:os.path.join [*leet, 84.md]
           - 85. maximal rectangle: !!python/object/apply:os.path.join [*leet, 85.md]
@@ -179,6 +180,7 @@ nav:
           - 213. house robbery ii: !!python/object/apply:os.path.join [*leet, 213.md]
           - 221. maximal square: !!python/object/apply:os.path.join [*leet, 221.md]
           - 239. sliding window maximum: !!python/object/apply:os.path.join [*leet, 239.md]
+          - 240. search a 2d matrix ii: !!python/object/apply:os.path.join [*leet, 240.md]
           - 263. ugly number: _problems/_leetcode/263.md
           - 268. missing number: !!python/object/apply:os.path.join [*leet, 268.md]
           - 300. longest increasing subsequence: _problems/_leetcode/300_longest_increasing_subsequence.md
@@ -188,6 +190,7 @@ nav:
           - 313. super ugly number: _problems/_leetcode/313.md
           - 322. coin change: _problems/_leetcode/322_coin_change.md
           - 337. house robbery iii: !!python/object/apply:os.path.join [*leet, 337.md]
+          - 378. kth smallest element in a sorted matrix: !!python/object/apply:os.path.join [*leet, 378.md]
           - 384. shuffle an array: !!python/object/apply:os.path.join [*leet, 384.md]
           - 386. lexicographical numbers: !!python/object/apply:os.path.join [*leet, 386.md]
           - 394. decode string: !!python/object/apply:os.path.join [*leet, 394.md]
@@ -204,6 +207,7 @@ nav:
           - 518. coin change 2: _problems/_leetcode/518_coin_change_2.md
           - 526. beautiful arrangement: !!python/object/apply:os.path.join [*leet, 526.md]
           - 543. diameter of binary tree: !!python/object/apply:os.path.join [*leet, 543.md]
+          - 554. brick wall: !!python/object/apply:os.path.join [*leet, 554.md]
           - 556. next greater element iii: !!python/object/apply:os.path.join [*leet, 556.md]
           - 560. subarrray sum equals k: _problems/_leetcode/560.md
           - 576. out of boundary paths: !!python/object/apply:os.path.join [*leet, 576.md]
