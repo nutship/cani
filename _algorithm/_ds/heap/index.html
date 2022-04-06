@@ -1,0 +1,2847 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/t.svg">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-6.1.3">
+    
+    
+      
+        
+            <title>heap - Algorithm</title>
+        
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2cb7adb3.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f0267088.min.css">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../css/general.css">
+    
+      <link rel="stylesheet" href="../../../css/fonts.css">
+    
+      <link rel="stylesheet" href="../../../css/code-admonition.css">
+    
+      <link rel="stylesheet" href="../../../css/katex.css">
+    
+      <link rel="stylesheet" href="../../../css/tables.css">
+    
+      <link rel="stylesheet" href="../../../css/extra/admonitions.css">
+    
+      <link rel="stylesheet" href="../../../css/extra/code-blocks.css">
+    
+      <link rel="stylesheet" href="../../../css/gadgets/book.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="rubble" data-md-color-primary="" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="Algorithm" class="md-header-nav__button md-logo" aria-label="Algorithm">
+      
+  
+  
+  
+  
+  <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="XMLID_947_"><g id="XMLID_1720_"><path id="XMLID_1689_" d="m294 464c0 20.987-17.013 38-38 38s-38-17.013-38-38z" fill="#80b6ff"/><g id="XMLID_1660_" fill="#e2e9ee"><path id="XMLID_1662_" d="m326.161 424h-140.322c-11.046 0-20-8.954-20-20 0-11.046 8.954-20 20-20h140.321c11.046 0 20 8.954 20 20 .001 11.046-8.954 20-19.999 20z"/><path id="XMLID_1661_" d="m326.161 464h-140.322c-11.046 0-20-8.954-20-20 0-11.046 8.954-20 20-20h140.321c11.046 0 20 8.954 20 20 .001 11.046-8.954 20-19.999 20z"/></g><path id="XMLID_1269_" d="m334.325 384h-156.65l-46.062-98.598c-42.526-91.026 23.917-195.402 124.387-195.402 100.47 0 166.913 104.376 124.387 195.402z" fill="#ffcd69"/></g><g id="XMLID_335_"><path id="XMLID_363_" d="m346.369 381.847 43.079-92.213c21.426-45.862 17.989-98.736-9.194-141.438-27.184-42.702-73.634-68.196-124.254-68.196s-97.07 25.494-124.253 68.196c-27.184 42.702-30.62 95.577-9.194 141.438l43.079 92.213c-6.013 5.49-9.792 13.388-9.792 22.153 0 7.678 2.902 14.688 7.664 20-4.761 5.312-7.664 12.322-7.664 20 0 16.542 13.458 30 30 30h23.216c4.614 21.683 23.906 38 46.945 38s42.331-16.317 46.945-38h23.216c16.542 0 30-13.458 30-30 0-7.678-2.902-14.688-7.664-20 4.761-5.312 7.664-12.322 7.664-20-.001-8.765-3.78-16.663-9.793-22.153zm-162.329-7.847-43.367-92.83c-18.517-39.635-15.546-85.33 7.945-122.234 23.492-36.904 63.635-58.936 107.382-58.936s83.89 22.032 107.382 58.936c23.491 36.904 26.462 82.599 7.946 122.233l-43.368 92.831h-37.96v-84h14c18.748 0 34-15.252 34-34s-15.252-34-34-34-34 15.252-34 34v14h-28v-14c0-18.748-15.252-34-34-34s-34 15.252-34 34 15.252 34 34 34h14v84zm37.96-104h-14c-7.72 0-14-6.28-14-14s6.28-14 14-14 14 6.28 14 14zm20 20h28v84h-28zm48-20v-14c0-7.72 6.28-14 14-14s14 6.28 14 14-6.28 14-14 14zm-34 222c-11.917 0-22.112-7.486-26.147-18h52.294c-4.035 10.514-14.23 18-26.147 18zm70.161-38h-140.322c-5.514 0-10-4.486-10-10s4.486-10 10-10h25.161c5.522 0 10-4.477 10-10s-4.478-10-10-10h-25.161c-5.514 0-10-4.486-10-10s4.486-10 10-10h140.322c5.514 0 10 4.486 10 10s-4.486 10-10 10h-25.161c-5.522 0-10 4.477-10 10s4.478 10 10 10h25.161c5.514 0 10 4.486 10 10s-4.486 10-10 10z"/><path id="XMLID_372_" d="m256 60c5.522 0 10-4.477 10-10v-40c0-5.523-4.478-10-10-10s-10 4.477-10 10v40c0 5.523 4.478 10 10 10z"/><path id="XMLID_373_" d="m116.737 111.932c1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929c3.905-3.905 3.905-10.237 0-14.143l-28.284-28.284c-3.906-3.905-10.236-3.905-14.143 0-3.905 3.905-3.905 10.237 0 14.143z"/><path id="XMLID_374_" d="m69.127 227.127h-40c-5.522 0-10 4.477-10 10s4.478 10 10 10h40c5.522 0 10-4.477 10-10s-4.478-10-10-10z"/><path id="XMLID_375_" d="m116.916 362.248-28.284 28.284c-3.905 3.905-3.905 10.237 0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929l28.284-28.284c3.905-3.905 3.905-10.237 0-14.143-3.906-3.906-10.236-3.906-14.142 0z"/><path id="XMLID_376_" d="m409.404 69.505-28.284 28.285c-3.905 3.905-3.905 10.237 0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929l28.284-28.284c3.905-3.905 3.905-10.237 0-14.143s-10.235-3.906-14.142-.001z"/><path id="XMLID_377_" d="m482.873 227.127h-40c-5.522 0-10 4.477-10 10s4.478 10 10 10h40c5.522 0 10-4.477 10-10s-4.477-10-10-10z"/><path id="XMLID_378_" d="m395.084 362.248c-3.906-3.905-10.236-3.905-14.143 0-3.905 3.905-3.905 10.237 0 14.143l28.284 28.284c1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929c3.905-3.905 3.905-10.237 0-14.143z"/><path id="XMLID_379_" d="m256 414c-2.63 0-5.21 1.07-7.07 2.93s-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.07 4.44 2.93 7.07 2.93 5.21-1.07 7.069-2.93c1.86-1.86 2.931-4.44 2.931-7.07s-1.07-5.21-2.931-7.07c-1.859-1.86-4.439-2.93-7.069-2.93z"/></g></g></svg>
+
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Algorithm
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              heap
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
+          algorithm🤖
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../_problems/" class="md-tabs__link">
+          problems🏁
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+
+  
+  
+   
+  
+  
+  <script>
+  document.getElementsByClassName('md-header')[0].style.setProperty('--md-primary-fg-color', '#088e11');
+  var tabs1 = document.getElementsByClassName('md-tabs')[0]; if(tabs1) tabs1.style.setProperty('--md-primary-fg-color', '#088e11');
+  // 'md-default-color'
+  // var tabs2 = document.getElementsByClassName('md-nav__title'); 
+  // if (tabs2)
+  //   for (var i = 0; i < tabs2.length; ++i)
+  //     tabs2[i].style.setProperty('--md-primary-fg-color', '#088e11');
+  </script>
+
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Algorithm" class="md-nav__button md-logo" aria-label="Algorithm">
+      
+  
+  
+  
+  
+  <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="XMLID_947_"><g id="XMLID_1720_"><path id="XMLID_1689_" d="m294 464c0 20.987-17.013 38-38 38s-38-17.013-38-38z" fill="#80b6ff"/><g id="XMLID_1660_" fill="#e2e9ee"><path id="XMLID_1662_" d="m326.161 424h-140.322c-11.046 0-20-8.954-20-20 0-11.046 8.954-20 20-20h140.321c11.046 0 20 8.954 20 20 .001 11.046-8.954 20-19.999 20z"/><path id="XMLID_1661_" d="m326.161 464h-140.322c-11.046 0-20-8.954-20-20 0-11.046 8.954-20 20-20h140.321c11.046 0 20 8.954 20 20 .001 11.046-8.954 20-19.999 20z"/></g><path id="XMLID_1269_" d="m334.325 384h-156.65l-46.062-98.598c-42.526-91.026 23.917-195.402 124.387-195.402 100.47 0 166.913 104.376 124.387 195.402z" fill="#ffcd69"/></g><g id="XMLID_335_"><path id="XMLID_363_" d="m346.369 381.847 43.079-92.213c21.426-45.862 17.989-98.736-9.194-141.438-27.184-42.702-73.634-68.196-124.254-68.196s-97.07 25.494-124.253 68.196c-27.184 42.702-30.62 95.577-9.194 141.438l43.079 92.213c-6.013 5.49-9.792 13.388-9.792 22.153 0 7.678 2.902 14.688 7.664 20-4.761 5.312-7.664 12.322-7.664 20 0 16.542 13.458 30 30 30h23.216c4.614 21.683 23.906 38 46.945 38s42.331-16.317 46.945-38h23.216c16.542 0 30-13.458 30-30 0-7.678-2.902-14.688-7.664-20 4.761-5.312 7.664-12.322 7.664-20-.001-8.765-3.78-16.663-9.793-22.153zm-162.329-7.847-43.367-92.83c-18.517-39.635-15.546-85.33 7.945-122.234 23.492-36.904 63.635-58.936 107.382-58.936s83.89 22.032 107.382 58.936c23.491 36.904 26.462 82.599 7.946 122.233l-43.368 92.831h-37.96v-84h14c18.748 0 34-15.252 34-34s-15.252-34-34-34-34 15.252-34 34v14h-28v-14c0-18.748-15.252-34-34-34s-34 15.252-34 34 15.252 34 34 34h14v84zm37.96-104h-14c-7.72 0-14-6.28-14-14s6.28-14 14-14 14 6.28 14 14zm20 20h28v84h-28zm48-20v-14c0-7.72 6.28-14 14-14s14 6.28 14 14-6.28 14-14 14zm-34 222c-11.917 0-22.112-7.486-26.147-18h52.294c-4.035 10.514-14.23 18-26.147 18zm70.161-38h-140.322c-5.514 0-10-4.486-10-10s4.486-10 10-10h25.161c5.522 0 10-4.477 10-10s-4.478-10-10-10h-25.161c-5.514 0-10-4.486-10-10s4.486-10 10-10h140.322c5.514 0 10 4.486 10 10s-4.486 10-10 10h-25.161c-5.522 0-10 4.477-10 10s4.478 10 10 10h25.161c5.514 0 10 4.486 10 10s-4.486 10-10 10z"/><path id="XMLID_372_" d="m256 60c5.522 0 10-4.477 10-10v-40c0-5.523-4.478-10-10-10s-10 4.477-10 10v40c0 5.523 4.478 10 10 10z"/><path id="XMLID_373_" d="m116.737 111.932c1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929c3.905-3.905 3.905-10.237 0-14.143l-28.284-28.284c-3.906-3.905-10.236-3.905-14.143 0-3.905 3.905-3.905 10.237 0 14.143z"/><path id="XMLID_374_" d="m69.127 227.127h-40c-5.522 0-10 4.477-10 10s4.478 10 10 10h40c5.522 0 10-4.477 10-10s-4.478-10-10-10z"/><path id="XMLID_375_" d="m116.916 362.248-28.284 28.284c-3.905 3.905-3.905 10.237 0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929l28.284-28.284c3.905-3.905 3.905-10.237 0-14.143-3.906-3.906-10.236-3.906-14.142 0z"/><path id="XMLID_376_" d="m409.404 69.505-28.284 28.285c-3.905 3.905-3.905 10.237 0 14.143 1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929l28.284-28.284c3.905-3.905 3.905-10.237 0-14.143s-10.235-3.906-14.142-.001z"/><path id="XMLID_377_" d="m482.873 227.127h-40c-5.522 0-10 4.477-10 10s4.478 10 10 10h40c5.522 0 10-4.477 10-10s-4.477-10-10-10z"/><path id="XMLID_378_" d="m395.084 362.248c-3.906-3.905-10.236-3.905-14.143 0-3.905 3.905-3.905 10.237 0 14.143l28.284 28.284c1.953 1.953 4.512 2.929 7.071 2.929s5.118-.976 7.071-2.929c3.905-3.905 3.905-10.237 0-14.143z"/><path id="XMLID_379_" d="m256 414c-2.63 0-5.21 1.07-7.07 2.93s-2.93 4.44-2.93 7.07 1.069 5.21 2.93 7.07 4.44 2.93 7.07 2.93 5.21-1.07 7.069-2.93c1.86-1.86 2.931-4.44 2.931-7.07s-1.07-5.21-2.931-7.07c-1.859-1.86-4.439-2.93-7.069-2.93z"/></g></g></svg>
+
+
+    </a>
+    Algorithm
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../.." class="md-nav__link">
+        home
+        </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      
+      
+        <a>algorithm🤖</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="algorithm🤖" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        algorithm🤖 <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../" class="md-nav__link">
+        Preface
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      
+      
+        <a>Data Structures</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Data Structures" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Data Structures <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        heap
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    
+        <a href="./" class="md-nav__link md-nav__link--active">
+        heap
+        </a>
+    
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 堆
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 堆">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    (1). 向下保持堆的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    (2). 向上保持堆的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    (3). 建堆
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2. 优先队列
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../ufset/" class="md-nav__link">
+        union-find set
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      
+      
+        <a>Sort</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Sort" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        Sort <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_sort/mergesort/" class="md-nav__link">
+        merge sort
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_binary_search/binary_search/" class="md-nav__link">
+        Binary Search
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      
+      
+        <a>Advanced Techniques</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Advanced Techniques" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Advanced Techniques <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_advt/1/" class="md-nav__link">
+        1. dynamic programming
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_advt/2/" class="md-nav__link">
+        2. greedy algorithm
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      
+      
+        <a href="../../_graph/basis/">Graph Algorithms</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Graph Algorithms" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        <span class="md-nav__icon md-icon"></span>
+        Graph Algorithms <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_graph/basis/" class="md-nav__link">
+        1. basis
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_graph/mst/" class="md-nav__link">
+        2. minium spanning trees
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_graph/ss_shortest/" class="md-nav__link">
+        3. single-source shortest paths
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_graph/ss_allpairs/" class="md-nav__link">
+        4. all-pairs shortest paths
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      
+      
+        <a>String Algorithms</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="String Algorithms" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        <span class="md-nav__icon md-icon"></span>
+        String Algorithms <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../_string/trie/" class="md-nav__link">
+        1. trie
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      
+      
+        <a>problems🏁</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="problems🏁" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        problems🏁 <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/" class="md-nav__link">
+        Preface
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_hashmap/hashmap/" class="md-nav__link">
+        HashMap
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_binary_tree/binary_tree/" class="md-nav__link">
+        Binary Tree
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_search/search/" class="md-nav__link">
+        DFS / BFS
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      
+      
+        <a>DP</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DP" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        <span class="md-nav__icon md-icon"></span>
+        DP <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_dp/linear/" class="md-nav__link">
+        linear
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_dp/interval/" class="md-nav__link">
+        interval
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_dp/pack/" class="md-nav__link">
+        pack
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_simul/simul/" class="md-nav__link">
+        Simulation
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_others/others/" class="md-nav__link">
+        Others
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-8" type="checkbox" id="nav-3-8">
+    
+    <label class="md-nav__link" for="nav-3-8">
+      
+      
+        <a>List</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="List" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-8">
+        <span class="md-nav__icon md-icon"></span>
+        List <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/1/" class="md-nav__link">
+        1. two sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/2/" class="md-nav__link">
+        2. add two numbers
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/10_regular_exp_matching/" class="md-nav__link">
+        10. regular exp matching
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/15/" class="md-nav__link">
+        15. three sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/16/" class="md-nav__link">
+        16. three sum closet
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/20/" class="md-nav__link">
+        20. valid parentheses
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/22/" class="md-nav__link">
+        22. generate parentheses
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/23_merge_k_sorted_lists/" class="md-nav__link">
+        23. merge K sorted lists
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/27/" class="md-nav__link">
+        27. remove element
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/31/" class="md-nav__link">
+        31. next permutation
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/34/" class="md-nav__link">
+        34. find first and last position of element in sorted array
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/39/" class="md-nav__link">
+        39. combination sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/40/" class="md-nav__link">
+        40. combination sum ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/41/" class="md-nav__link">
+        41. first missing positive
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/42/" class="md-nav__link">
+        42. trapping rain water
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/44_wildcard_matching/" class="md-nav__link">
+        44. wildcard matching
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/45/" class="md-nav__link">
+        45. jump game ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/46/" class="md-nav__link">
+        46. permutations
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/47/" class="md-nav__link">
+        47. permutations ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/53_maximum_subarray/" class="md-nav__link">
+        53. maximum subarray
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/55/" class="md-nav__link">
+        55. jump game
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/57/" class="md-nav__link">
+        57. insert interval
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/60/" class="md-nav__link">
+        60. permutation sequence
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/71/" class="md-nav__link">
+        71. simplify path
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/72_edit_distance/" class="md-nav__link">
+        72. edit distance
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/74/" class="md-nav__link">
+        74. search a 2d matrix
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/79/" class="md-nav__link">
+        79. word search
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/84/" class="md-nav__link">
+        84. largest rectangle in histogram
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/85/" class="md-nav__link">
+        85. maximal rectangle
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/86/" class="md-nav__link">
+        86. partition list
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/91/" class="md-nav__link">
+        91. decode ways
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/96/" class="md-nav__link">
+        96. unique binary search trees
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/97/" class="md-nav__link">
+        97. interleaving string
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/101/" class="md-nav__link">
+        101. symmetric tree
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/102/" class="md-nav__link">
+        102. binary tree level order traversal
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/103/" class="md-nav__link">
+        103. binary tree zigzag level order traversal
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/105/" class="md-nav__link">
+        105. construct binary tree from preorder and inorder traversal
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/106/" class="md-nav__link">
+        106. construct binary tree from inorder and postorder traversal
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/112/" class="md-nav__link">
+        112. path sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/113/" class="md-nav__link">
+        113. path sum ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/120_triangle/" class="md-nav__link">
+        120. triangle
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/121_best_time_to_sell_stock/" class="md-nav__link">
+        121. best time to sell stock
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/122_best_time_to_sell_stock_ii/" class="md-nav__link">
+        122. best time to sell stock ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/123_best_time_to_sell_stock_iii/" class="md-nav__link">
+        123. best time to sell stock iii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/124/" class="md-nav__link">
+        124. binary tree maximum path sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/128_longest_consecutive_sequence/" class="md-nav__link">
+        128. longest consecutive sequence
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/130_surrounded_regions/" class="md-nav__link">
+        130. surround regions
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/134/" class="md-nav__link">
+        134. gas station
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/138/" class="md-nav__link">
+        138. copy list with random pointer
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/139/" class="md-nav__link">
+        139. word break
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/140/" class="md-nav__link">
+        140. word break ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/143/" class="md-nav__link">
+        143. reorder list
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/152_maximum_product_subarray/" class="md-nav__link">
+        152. maximum product subarray
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/155/" class="md-nav__link">
+        155. min stack
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/162/" class="md-nav__link">
+        162. find peak element
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/165/" class="md-nav__link">
+        165. compare version numbers
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/166/" class="md-nav__link">
+        166. fraction to recurring decimal
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/167/" class="md-nav__link">
+        167. two sum ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/179/" class="md-nav__link">
+        179. largest number
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/188_best_time_to_sell_stock_iv/" class="md-nav__link">
+        188. best time to sell stock iv
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/198/" class="md-nav__link">
+        198. house robbery
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/199/" class="md-nav__link">
+        199. binary tree right side view
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/200_number_of_islands/" class="md-nav__link">
+        200. number of islands
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/206/" class="md-nav__link">
+        206. reverse linked list
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/207/" class="md-nav__link">
+        207. course schedule
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/208/" class="md-nav__link">
+        208. implement trie prefix tree
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/209/" class="md-nav__link">
+        209. mininum size subarray sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/210/" class="md-nav__link">
+        210. course schedule ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/212/" class="md-nav__link">
+        212. word search ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/213/" class="md-nav__link">
+        213. house robbery ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/221/" class="md-nav__link">
+        221. maximal square
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/239/" class="md-nav__link">
+        239. sliding window maximum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/240/" class="md-nav__link">
+        240. search a 2d matrix ii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/263/" class="md-nav__link">
+        263. ugly number
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/268/" class="md-nav__link">
+        268. missing number
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/300_longest_increasing_subsequence/" class="md-nav__link">
+        300. longest increasing subsequence
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/309_best_time_to_buy_and_sell_stock_with_cooldown/" class="md-nav__link">
+        309. best time to sell stock with cooldown
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/310/" class="md-nav__link">
+        310. minumum height trees
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/312/" class="md-nav__link">
+        312. burst ballons
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/313/" class="md-nav__link">
+        313. super ugly number
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/322_coin_change/" class="md-nav__link">
+        322. coin change
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/337/" class="md-nav__link">
+        337. house robbery iii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/378/" class="md-nav__link">
+        378. kth smallest element in a sorted matrix
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/384/" class="md-nav__link">
+        384. shuffle an array
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/386/" class="md-nav__link">
+        386. lexicographical numbers
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/394/" class="md-nav__link">
+        394. decode string
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/410/" class="md-nav__link">
+        410. split array largest sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/413/" class="md-nav__link">
+        413. arithmetic slices
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/416_partition_equal_subset_sum/" class="md-nav__link">
+        416. partition equal subset sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/437/" class="md-nav__link">
+        437. path sum iii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/440/" class="md-nav__link">
+        440. kth smallest in lexicographical order
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/446/" class="md-nav__link">
+        446. arithmetic slices ii subsequence
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/447/" class="md-nav__link">
+        447. number of boomerangs
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/474_ones_and_zeroes/" class="md-nav__link">
+        474. ones and zeroes
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/494_target_sum/" class="md-nav__link">
+        494. target sum
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/498/" class="md-nav__link">
+        498. diagonal traverse
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/518_coin_change_2/" class="md-nav__link">
+        518. coin change 2
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/526/" class="md-nav__link">
+        526. beautiful arrangement
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/543/" class="md-nav__link">
+        543. diameter of binary tree
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/554/" class="md-nav__link">
+        554. brick wall
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/556/" class="md-nav__link">
+        556. next greater element iii
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/560/" class="md-nav__link">
+        560. subarrray sum equals k
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/576/" class="md-nav__link">
+        576. out of boundary paths
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/600/" class="md-nav__link">
+        600. non-negative integers without consective 1s
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/621/" class="md-nav__link">
+        621. task scheduler
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/633/" class="md-nav__link">
+        633. sum of square numbers
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/664/" class="md-nav__link">
+        664. strange printer
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/670/" class="md-nav__link">
+        670. maximum swap
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/671/" class="md-nav__link">
+        671. second minimum node in a binary tree
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/714_best_time_to_buy_and_sell_stock_with_transaction_fee/" class="md-nav__link">
+        714. best time to sell stock with transaction fee
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/803_bricks_failing_when_hit/" class="md-nav__link">
+        803. bricks failing when hit
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/852/" class="md-nav__link">
+        852. peak index in a mountain array
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/875/" class="md-nav__link">
+        875. koko eating bananas
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/876/" class="md-nav__link">
+        876. middle of the linked list
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/887/" class="md-nav__link">
+        887. super egg drop
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/939/" class="md-nav__link">
+        939. minimum area rectangle
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/979/" class="md-nav__link">
+        979. distribute coins in binary tree
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/987/" class="md-nav__link">
+        987. vertical order traversal of a binary tree
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/996/" class="md-nav__link">
+        996. number of squareful arrays
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/1027/" class="md-nav__link">
+        1027. longest arithmetic subsequence
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/1277/" class="md-nav__link">
+        1277. count square submatrices with all ones
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../_problems/_leetcode/1894/" class="md-nav__link">
+        1894. find the student that will replace the chalk
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 堆
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 堆">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    (1). 向下保持堆的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    (2). 向上保持堆的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    (3). 建堆
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2. 优先队列
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                    <h1>heap</h1>
+                  
+                
+                <h3 id="1">1. 堆<a class="headerlink" href="#1" title="Permanent link">🧐</a></h3>
+<p>二叉堆是用数组表示的完全二叉树 <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>。以最小堆为例，满足定义:</p>
+<ul>
+<li>除根以外所有结点 $\sf i$ 满足 $\sf i.value \leq parent(i).value$</li>
+</ul>
+<p>完全二叉树访问父子结点:</p>
+<ul>
+<li>(i from 1): <code>left(i) = 2*i</code>, <code>right(i) = 2*i+1</code>, <code>father(i) = i/2</code>, <code>fp = N / 2</code></li>
+<li>(i from 0): <code>left(i) = 2*i+1</code>, <code>right(i) = 2*i+2</code>, <code>father(i) = (i-1)/2</code>, <code>fp = N / 2 - 1</code></li>
+</ul>
+<h4 id="1_1">(1). 向下保持堆的性质<a class="headerlink" href="#1_1" title="Permanent link">🧐</a></h4>
+<p>假设左右子树 <code>left(i)</code> 和 <code>right(i)</code> 均满足最小堆的性质，而 <code>i</code> 和它们的关系不确定，通过 <code>MinHeapify(i, heap)</code> 向下维护最小堆的性质:</p>
+<ul>
+<li>空出 <code>i</code> 的位置，如果 <code>left(i)</code> 和 <code>right(i)</code> 的最小值比 <code>i.value</code> 小，则向下递归</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">MinHeapify</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">father</span> <span class="o">=</span> <span class="n">i</span><span class="p">,</span> <span class="n">child</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">father</span><span class="o">]</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">child</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">child</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="na">size</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">child</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">child</span><span class="o">]</span><span class="p">)</span>
+            <span class="n">child</span><span class="o">++</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">value</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">child</span><span class="o">]</span><span class="p">)</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">father</span><span class="o">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">child</span><span class="o">]</span><span class="p">;</span>
+        <span class="n">father</span> <span class="o">=</span> <span class="n">child</span><span class="p">;</span>
+        <span class="n">child</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">child</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">father</span><span class="o">]</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="2">(2). 向上保持堆的性质<a class="headerlink" href="#2" title="Permanent link">🧐</a></h4>
+<p>如果减小 <code>i.value</code>，向下的性质可以保持，但向上不一定，则向上递归保持最小堆性质</p>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">DecreaseKey</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="o">&gt;=</span> <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">]</span><span class="p">;</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">nodes</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">key</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="3">(3). 建堆<a class="headerlink" href="#3" title="Permanent link">🧐</a></h4>
+<p>从第一个非叶节点 <code>fp(i)</code> 开始，向下调整堆</p>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">BuildMinHeap</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">size</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">--</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">MinHeapify</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>高为 $k$ 的层有 $2^{h-k}$ 个结点，高为 $h$ 的满二叉树有 $2^{h-1}$ 个结点，有</p>
+<p>$$
+\sum_{k=0}^h k \cdot 2^{h-k} = 2^h \sum_{k=0}^h \frac{k}{2^k} = 2^h (2- \frac{h + 2}{2^h}) \leq 2n
+$$</p>
+<p>故建堆复杂度为 $O(n)$</p>
+<h3 id="2_1">2. 优先队列<a class="headerlink" href="#2_1" title="Permanent link">🧐</a></h3>
+<p>优先队列底层调用堆的实现，需要提供的接口:</p>
+<ul>
+<li><code>ExtractMin(Q)</code>: 弹出堆顶元素，把最后一个元素置于堆顶，然后向下调整堆</li>
+<li><code>Insert(key, Q)</code>: 置于堆底，然后向上调整</li>
+<li>如果需要同时弹出和插入两种操作，可以弹出后插在堆顶，可以节约一个 $\log$ 的时间</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>完全二叉树：除最后一层外的其余层都是满的，并且最后一层要么是满的，要么在右边缺少连续若干节点&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                
+                    Preface
+                
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../ufset/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                
+                    union-find set
+                
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        <!-- Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a> -->
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.00f9b4e0.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.tabs', 'tabs.changeicon', 'toc.autohide', 'colors'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script type="module" src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js"></script>
+      
+        <script type="module" src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js"></script>
+      
+        <script type="module" src="../../../js/mkmain.js"></script>
+      
+        <script type="module" src="../../../js/katex.js"></script>
+      
+    
+  </body>
+</html>
